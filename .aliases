@@ -17,6 +17,11 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
+#myShortcuts
+alias mydev="cd ~/my/development"
+alias myws="cd ~/my/workspace-learning"
+alias myop="cd ~/my/other-projects"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"

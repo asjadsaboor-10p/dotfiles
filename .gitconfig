@@ -1,5 +1,22 @@
 [alias]
 
+    #my aliases start
+	ls = log --color --graph --pretty=format:'%Cred%h%Creset [%ad] -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue) <%an>%Creset' --abbrev-commit --date=short
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	last = log -1 HEAD
+
+	st = status -s
+	cl = clone
+	ci = commit
+	cam = commit -am
+	co = checkout
+	br = branch
+	diff = diff --word-diff
+	dc = diff --cached
+	feature = "!f(){ git checkout -b "feature/$1"; }; f"
+	bug = "!f(){ git checkout -b "bug/$1"; }; f"
+	#my aliases end
+	
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 

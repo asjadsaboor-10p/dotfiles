@@ -33,4 +33,3 @@ export MANPAGER='less -X';
 # https://stackoverflow.com/a/42265848/96656
 export GPG_TTY=$(tty);
 
-export NVM_DIR=~/.nvm
